@@ -69,3 +69,76 @@ Jika sudah selesai proses pembuatan project baru, pastikan tampilan seperti beri
 
 Login ke akun GitHub Anda, lalu buat repository baru dengan nama "flutter-fundamental-part1"
 
+
+![alt text](img/praktikum3/praktikum3_1.png)
+
+#### Langkah 2
+
+Login ke akun GitHub Anda, lalu buat repository baru dengan nama "flutter-fundamental-part1"
+
+
+![alt text](img/praktikum3/praktikum3_2.png)
+
+#### Langkah 3
+
+Kembali ke VS code, project flutter hello_world, buka terminal pada menu Terminal > New Terminal. Lalu ketik perintah berikut untuk inisialisasi git pada project Anda.
+
+![alt text](img/praktikum3/praktikum3_3.png)
+
+#### Langkah 4:
+Pilih menu Source Control di bagian kiri, lalu lakukan stages (+) pada file .gitignore untuk mengunggah file pertama ke repository GitHub.
+
+![alt text](img/praktikum3/praktikum3_4.png)
+
+#### Langkah 5:
+Beri pesan commit "tambah gitignore" lalu klik Commit (✔)
+
+![alt text](img/praktikum3/praktikum3_5.png)
+
+
+#### Langkah 6:
+Lakukan push dengan klik bagian menu titik tiga > Push
+
+![alt text](img/praktikum3/praktikum3_6.png)
+
+
+#### Langkah 7:
+Di pojok kanan bawah akan tampil seperti gambar berikut. Klik "Add Remote"
+
+![alt text](img/praktikum3/praktikum3_7.png)
+
+
+#### Langkah 8:
+Salin tautan repository Anda dari browser ke bagian ini, lalu klik Add remote
+
+![alt text](img/praktikum3/praktikum3_8_1.png)
+
+Setelah berhasil, tulis remote name dengan "origin"
+
+![alt text](img/praktikum3/praktikum3_8_2.png)
+
+#### Langkah 9:
+Lakukan hal yang sama pada file README.md mulai dari Langkah 4. Setelah berhasil melakukan push, masukkan username GitHub Anda dan password berupa token yang telah dibuat (pengganti password konvensional ketika Anda login di browser GitHub). Reload halaman repository GitHub Anda, maka akan tampil hasil push kedua file tersebut seperti gambar berikut.
+
+![alt text](img/praktikum3/praktikum3_9_1.png)
+![alt text](img/praktikum3/praktikum3_9_2.png)
+![alt text](img/praktikum3/praktikum3_9_3.png)
+![alt text](img/praktikum3/praktikum3_9_4.png)
+
+
+#### Langkah 10:
+Lakukan push juga untuk semua file lainnya dengan pilih Stage All Changes. Beri pesan commit "project hello_world". Maka akan tampil di repository GitHub Anda seperti berikut.
+
+![alt text](img/praktikum3/praktikum3_10.png)
+
+#### Langkah 11:
+Kembali ke VS Code, ubah platform di pojok kanan bawah ke emulator atau device atau bisa juga menggunakan browser Chrome. Lalu coba running project hello_world dengan tekan F5 atau Run > Start Debugging. Tunggu proses kompilasi hingga selesai, maka aplikasi flutter pertama Anda akan tampil seperti berikut.
+
+![alt text](img/praktikum3/praktikum3_11.png)
+
+![alt text](img/praktikum3/praktikum3_11_1.png)
+
+#### Langkah 12:
+Silakan screenshot seperti pada Langkah 11, namun teks yang ditampilkan dalam aplikasi berupa nama lengkap Anda. Simpan file screenshot dengan nama 01.png pada folder images (buat folder baru jika belum ada) di project hello_world Anda. Lalu ubah isi README.md seperti berikut, sehingga tampil hasil screenshot pada file README.md. Kemudian push ke repository Anda.
+
+![alt text](/image/01.png)
