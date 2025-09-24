@@ -1,183 +1,92 @@
-# Pertemuan 5: Aplikasi Pertama dan Widget Dasar Flutter
+# 📝 Praktikum \#05: Aplikasi Pertama dan Widget Dasar Flutter
 
-**NIM**: 2341720116  
-**Nama**: Hanif Faishal Hilmi
+  - **NIM**: `2341720116`
+  - **Nama**: `Hanif Faishal Hilmi`
 
 -----
 
-## 📝 Praktikum #05 | Aplikasi Pertama dan Widget Dasar Flutter
+## Praktikum 1: Membuat Project Flutter Baru
 
----
+### Langkah 1: Membuka Command Palette
 
-### Praktikum 1: Praktikum 1: Membuat Project Flutter Baru
+Membuka VS Code, kemudian tekan `Ctrl + Shift + P` untuk menampilkan **Command Palette**. Ketik `Flutter` dan pilih **New Application Project**.
 
-#### Langkah 1
-Buka VS Code, lalu tekan tombol **Ctrl + Shift + P** maka akan tampil Command Palette, lalu ketik **Flutter**. Pilih **New Application Project**.
+### Langkah 2: Memilih Lokasi Proyek
 
-![alt text](/img/praktikum1/P5_praktikum1_1.png)
+Memilih folder tujuan untuk menyimpan proyek.
 
+### Langkah 3: Memberi Nama Proyek
 
-#### Langkah 2:
-Kemudian buat folder **sesuai style** laporan praktikum yang Anda pilih. Disarankan pada folder dokumen atau desktop atau alamat folder lain yang tidak terlalu dalam atau panjang. Lalu pilih **Select a folder to create the project in**.
-![alt text](/img/praktikum1/P5_praktikum1_2.png)
+Memberi nama proyek `hello_world` dan tekan **Enter**. Proses pembuatan proyek akan berjalan secara otomatis.
 
+### Langkah 4: Proyek Berhasil Dibuat
 
-#### Langkah 3:
-Buat nama project flutter **hello_world** seperti berikut, lalu tekan **Enter**. Tunggu hingga proses pembuatan project baru selesai.
+Setelah selesai, akan muncul pesan "**Your Flutter Project is ready\!**" yang menandakan proyek baru telah berhasil dibuat.
 
+-----
 
-![alt text](/img/praktikum1/P5_praktikum1_3.png)
+## Praktikum 2: Menghubungkan Perangkat Android
 
+### Langkah 1-6: Mengaktifkan Opsi Pengembang dan Debug USB
 
-#### Langkah 4:
-Jika sudah selesai proses pembuatan project baru, pastikan tampilan seperti berikut. Pesan akan tampil berupa "**Your Flutter Project is ready!**" artinya Anda telah berhasil membuat project Flutter baru.
+Untuk menghubungkan perangkat Android fisik, **Opsi Pengembang (Developer Options)** dan **Debug USB (USB Debugging)** harus diaktifkan melalui menu **Settings** pada perangkat.
 
----
+-----
 
-### Praktikum 2: Menghubungkan Perangkat Android atau Emulator
+## Praktikum 3: Menggunakan GitHub untuk Version Control
 
-#### Mengaktifkan proses debug USB
+### Langkah 1-2: Membuat Repository Baru
 
-##### VS Code
-1. Di perangkat Android, ketuk **Settings > About phone**.
+Membuat *repository* baru di GitHub dengan nama `flutter-fundamental-part1`.
 
-2. Ketuk **Build number** tujuh kali.
+### Langkah 3-10: Inisialisasi Git dan Push Proyek Awal
 
-3. Jika diminta, masukkan sandi atau PIN perangkat. Anda tahu Anda telah berhasil saat melihat pesan **You are now a developer!**.
+Melakukan inisialisasi Git pada proyek `hello_world` melalui terminal VS Code. Kemudian, melakukan *commit* dan *push* untuk file `.gitignore`, `README.md`, dan seluruh file proyek lainnya ke *repository* GitHub.
 
-![alt text](img/praktikum2/P5_praktikum2_1.jpg)
+### Langkah 11: Menjalankan Aplikasi Pertama
 
-![alt text](img/praktikum2/P5_praktikum2_2.jpg)
+Menjalankan proyek `hello_world` pada emulator atau perangkat. Aplikasi *counter* bawaan Flutter akan tampil sebagai hasilnya.
 
-4. Kembali ke **Settings**, lalu ketuk *System > Developer options*.
+### Langkah 12: Modifikasi dan Personalisasi README
 
-5. Jika Anda tidak melihat **Developer options**, ketuk **Advanced options**.
+Mengubah teks pada aplikasi menjadi nama lengkap, mengambil *screenshot*, dan menampilkannya pada file `README.md` di *repository* GitHub.
 
-![alt text](img/praktikum2/P5_praktikum2_3.jpg)
+-----
 
-![alt text](img/praktikum2/P5_praktikum2_4.jpg)
+## Praktikum 4: Menerapkan Widget Dasar
 
-6. Ketuk Opsi developer, lalu ketuk tombol Proses debug USB untuk mengaktifkannya.
+### Langkah 1: Text Widget
 
-![alt text](img/praktikum2/P5_praktikum2_5.jpg)
+Membuat file `text_widget.dart` di dalam folder `lib/basic_widgets` dan mengimplementasikannya di `main.dart` untuk menampilkan teks yang sudah di-styling.
 
----
+### Langkah 2: Image Widget
 
-### Praktikum 3: Membuat Repository GitHub dan Laporan Praktikum
+Menambahkan gambar `logo_polinema.jpg` ke dalam folder `assets`, mendaftarkannya di `pubspec.yaml`, dan membuat `image_widget.dart` untuk menampilkannya di aplikasi.
 
-#### Langkah 1
+-----
 
-Login ke akun GitHub Anda, lalu buat repository baru dengan nama "flutter-fundamental-part1"
+## Praktikum 5: Menerapkan Widget Material Design & Cupertino
 
+### Langkah 1: Cupertino Widgets
 
-![alt text](img/praktikum3/praktikum3_1.png)
+Membuat file `loading_cupertino.dart` untuk menampilkan `CupertinoButton` dan `CupertinoActivityIndicator`.
 
-#### Langkah 2
+### Langkah 2: Floating Action Button (FAB)
 
-Login ke akun GitHub Anda, lalu buat repository baru dengan nama "flutter-fundamental-part1"
+Membuat file `fab_widget.dart` untuk mengimplementasikan `FloatingActionButton` sebagai bagian dari Material Design.
 
+### Langkah 3: Scaffold Widget
 
-![alt text](img/praktikum3/praktikum3_2.png)
+Menggunakan `Scaffold` di `main.dart` untuk membangun struktur dasar halaman sesuai standar Material Design, yang mencakup `AppBar`, `body`, dan `bottomNavigationBar`.
 
-#### Langkah 3
+### Langkah 4: Dialog Widget
 
-Kembali ke VS code, project flutter hello_world, buka terminal pada menu Terminal > New Terminal. Lalu ketik perintah berikut untuk inisialisasi git pada project Anda.
+Mengubah `main.dart` untuk menampilkan `AlertDialog` atau `SimpleDialog` saat sebuah aksi dipicu.
 
-![alt text](img/praktikum3/praktikum3_3.png)
+### Langkah 5: Input Widget (TextField)
 
-#### Langkah 4:
-Pilih menu Source Control di bagian kiri, lalu lakukan stages (+) pada file .gitignore untuk mengunggah file pertama ke repository GitHub.
+Mengimplementasikan `TextField` untuk menerima input teks dari pengguna.
 
-![alt text](img/praktikum3/praktikum3_4.png)
+### Langkah 6: Date and Time Pickers
 
-#### Langkah 5:
-Beri pesan commit "tambah gitignore" lalu klik Commit (✔)
-
-![alt text](img/praktikum3/praktikum3_5.png)
-
-
-#### Langkah 6:
-Lakukan push dengan klik bagian menu titik tiga > Push
-
-![alt text](img/praktikum3/praktikum3_6.png)
-
-
-#### Langkah 7:
-Di pojok kanan bawah akan tampil seperti gambar berikut. Klik "Add Remote"
-
-![alt text](img/praktikum3/praktikum3_7.png)
-
-
-#### Langkah 8:
-Salin tautan repository Anda dari browser ke bagian ini, lalu klik Add remote
-
-![alt text](img/praktikum3/praktikum3_8_1.png)
-
-Setelah berhasil, tulis remote name dengan "origin"
-
-![alt text](img/praktikum3/praktikum3_8_2.png)
-
-#### Langkah 9:
-Lakukan hal yang sama pada file README.md mulai dari Langkah 4. Setelah berhasil melakukan push, masukkan username GitHub Anda dan password berupa token yang telah dibuat (pengganti password konvensional ketika Anda login di browser GitHub). Reload halaman repository GitHub Anda, maka akan tampil hasil push kedua file tersebut seperti gambar berikut.
-
-![alt text](img/praktikum3/praktikum3_9_1.png)
-![alt text](img/praktikum3/praktikum3_9_2.png)
-![alt text](img/praktikum3/praktikum3_9_3.png)
-![alt text](img/praktikum3/praktikum3_9_4.png)
-
-
-#### Langkah 10:
-Lakukan push juga untuk semua file lainnya dengan pilih Stage All Changes. Beri pesan commit "project hello_world". Maka akan tampil di repository GitHub Anda seperti berikut.
-
-![alt text](img/praktikum3/praktikum3_10.png)
-
-#### Langkah 11:
-Kembali ke VS Code, ubah platform di pojok kanan bawah ke emulator atau device atau bisa juga menggunakan browser Chrome. Lalu coba running project hello_world dengan tekan F5 atau Run > Start Debugging. Tunggu proses kompilasi hingga selesai, maka aplikasi flutter pertama Anda akan tampil seperti berikut.
-
-![alt text](img/praktikum3/praktikum3_11.png)
-
-![alt text](img/praktikum3/praktikum3_11_1.png)
-
-#### Langkah 12:
-Silakan screenshot seperti pada Langkah 11, namun teks yang ditampilkan dalam aplikasi berupa nama lengkap Anda. Simpan file screenshot dengan nama 01.png pada folder images (buat folder baru jika belum ada) di project hello_world Anda. Lalu ubah isi README.md seperti berikut, sehingga tampil hasil screenshot pada file README.md. Kemudian push ke repository Anda.
-
-![alt text](/image/01.png)
-
----
-
-### Praktikum 4: Menerapkan Widget Dasar
-
-#### Langkah 1: Text Widget
-Buat folder baru basic_widgets di dalam folder lib. Kemudian buat file baru di dalam basic_widgets dengan nama text_widget.dart. Ketik atau salin kode program berikut ke project hello_world Anda pada file text_widget.dart.
-
-![alt text](img/praktikum4/praktikum4_1_1.png)
-
-Lakukan import file text_widget.dart ke main.dart, lalu ganti bagian text widget dengan kode di atas. Maka hasilnya seperti gambar berikut. Screenshot hasil milik Anda, lalu dibuat laporan pada file README.md.
-
-![alt text](img/praktikum4/praktikum4_1_2.png)
-
-#### Langkah 2: Image Widget
-Buat sebuah file image_widget.dart di dalam folder basic_widgets dengan isi kode berikut.
-import 'package:flutter/material.dart';
-
-class MyImageWidget extends StatelessWidget {
-  const MyImageWidget({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return const Image(
-      image: AssetImage("logo_polinema.jpg")
-    );
-  }
-}
-
-![alt text](img/praktikum4/praktikum4_2_1.png)
-
-Lakukan penyesuaian asset pada file pubspec.yaml dan tambahkan file logo Anda di folder assets project hello_world.
-
-flutter:
-  assets:
-     - logo_polinema.jpg
-Jangan lupa sesuaikan kode dan import di file main.dart kemudian akan tampil gambar seperti berikut.
-
-![alt text](img/praktikum4/praktikum4_2_2.png)
+Menambahkan fungsionalitas untuk menampilkan pemilih tanggal (*Date Picker*) dan waktu (*Time Picker*) sebagai bagian dari input pengguna.
