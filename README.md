@@ -63,7 +63,7 @@ Jika sudah selesai proses pembuatan project baru, pastikan tampilan seperti beri
 
 ---
 
-### Praktikum 2: Menghubungkan Perangkat Android atau Emulator
+### Praktikum 3: Membuat Repository GitHub dan Laporan Praktikum
 
 #### Langkah 1
 
@@ -142,3 +142,42 @@ Kembali ke VS Code, ubah platform di pojok kanan bawah ke emulator atau device a
 Silakan screenshot seperti pada Langkah 11, namun teks yang ditampilkan dalam aplikasi berupa nama lengkap Anda. Simpan file screenshot dengan nama 01.png pada folder images (buat folder baru jika belum ada) di project hello_world Anda. Lalu ubah isi README.md seperti berikut, sehingga tampil hasil screenshot pada file README.md. Kemudian push ke repository Anda.
 
 ![alt text](/image/01.png)
+
+---
+
+### Praktikum 4: Menerapkan Widget Dasar
+
+#### Langkah 1: Text Widget
+Buat folder baru basic_widgets di dalam folder lib. Kemudian buat file baru di dalam basic_widgets dengan nama text_widget.dart. Ketik atau salin kode program berikut ke project hello_world Anda pada file text_widget.dart.
+
+![alt text](img/praktikum4/praktikum4_1_1.png)
+
+Lakukan import file text_widget.dart ke main.dart, lalu ganti bagian text widget dengan kode di atas. Maka hasilnya seperti gambar berikut. Screenshot hasil milik Anda, lalu dibuat laporan pada file README.md.
+
+![alt text](img/praktikum4/praktikum4_1_2.png)
+
+#### Langkah 2: Image Widget
+Buat sebuah file image_widget.dart di dalam folder basic_widgets dengan isi kode berikut.
+import 'package:flutter/material.dart';
+
+class MyImageWidget extends StatelessWidget {
+  const MyImageWidget({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return const Image(
+      image: AssetImage("logo_polinema.jpg")
+    );
+  }
+}
+
+![alt text](img/praktikum4/praktikum4_2_1.png)
+
+Lakukan penyesuaian asset pada file pubspec.yaml dan tambahkan file logo Anda di folder assets project hello_world.
+
+flutter:
+  assets:
+     - logo_polinema.jpg
+Jangan lupa sesuaikan kode dan import di file main.dart kemudian akan tampil gambar seperti berikut.
+
+![alt text](img/praktikum4/praktikum4_2_2.png)
