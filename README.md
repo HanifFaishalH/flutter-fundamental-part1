@@ -60,3 +60,12 @@ Jika sudah selesai proses pembuatan project baru, pastikan tampilan seperti beri
 6. Ketuk Opsi developer, lalu ketuk tombol Proses debug USB untuk mengaktifkannya.
 
 ![alt text](img/praktikum2/P5_praktikum2_5.jpg)
+
+---
+
+### Praktikum 2: Menghubungkan Perangkat Android atau Emulator
+
+#### Langkah 1
+
+Login ke akun GitHub Anda, lalu buat repository baru dengan nama "flutter-fundamental-part1"
+
