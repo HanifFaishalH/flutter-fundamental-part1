@@ -1,92 +1,198 @@
-# 📝 Praktikum \#05: Aplikasi Pertama dan Widget Dasar Flutter
+# Pertemuan 5: Aplikasi Pertama dan Widget Dasar Flutter
 
-  - **NIM**: `2341720116`
-  - **Nama**: `Hanif Faishal Hilmi`
+**NIM**: 2341720116
+**Nama**: Hanif Faishal Hilmi
 
------
+---
 
-## Praktikum 1: Membuat Project Flutter Baru
+## 📝 Praktikum #05 | Aplikasi Pertama dan Widget Dasar Flutter
 
-### Langkah 1: Membuka Command Palette
+---
 
-Membuka VS Code, kemudian tekan `Ctrl + Shift + P` untuk menampilkan **Command Palette**. Ketik `Flutter` dan pilih **New Application Project**.
+### Praktikum 1: Membuat Project Flutter Baru
 
-### Langkah 2: Memilih Lokasi Proyek
+**Langkah 1**
+Buka VS Code, lalu tekan **Ctrl + Shift + P**, ketik **Flutter**, pilih **New Application Project**.
 
-Memilih folder tujuan untuk menyimpan proyek.
+![alt text](/img/praktikum1/P5_praktikum1_1.png)
 
-### Langkah 3: Memberi Nama Proyek
+**Langkah 2**
+Buat folder sesuai style laporan, lalu pilih **Select a folder to create the project in**.
 
-Memberi nama proyek `hello_world` dan tekan **Enter**. Proses pembuatan proyek akan berjalan secara otomatis.
+![alt text](/img/praktikum1/P5_praktikum1_2.png)
 
-### Langkah 4: Proyek Berhasil Dibuat
+**Langkah 3**
+Buat nama project `hello_world`, lalu tekan **Enter**. Tunggu hingga selesai.
 
-Setelah selesai, akan muncul pesan "**Your Flutter Project is ready\!**" yang menandakan proyek baru telah berhasil dibuat.
+![alt text](/img/praktikum1/P5_praktikum1_3.png)
 
------
+**Langkah 4**
+Jika berhasil, akan muncul pesan **"Your Flutter Project is ready!"**.
 
-## Praktikum 2: Menghubungkan Perangkat Android
+---
 
-### Langkah 1-6: Mengaktifkan Opsi Pengembang dan Debug USB
+### Praktikum 2: Menghubungkan Perangkat Android atau Emulator
 
-Untuk menghubungkan perangkat Android fisik, **Opsi Pengembang (Developer Options)** dan **Debug USB (USB Debugging)** harus diaktifkan melalui menu **Settings** pada perangkat.
+#### VS Code
 
------
+**Mengaktifkan proses debug USB**
 
-## Praktikum 3: Menggunakan GitHub untuk Version Control
+1. Di perangkat Android, buka **Settings > About phone**.
+2. Ketuk **Build number** tujuh kali hingga muncul pesan **You are now a developer!**.
 
-### Langkah 1-2: Membuat Repository Baru
+![alt text](img/praktikum2/P5_praktikum2_1.jpg)
+![alt text](img/praktikum2/P5_praktikum2_2.jpg)
 
-Membuat *repository* baru di GitHub dengan nama `flutter-fundamental-part1`.
+3. Kembali ke **Settings > System > Developer options**.
+4. Aktifkan **USB Debugging**.
 
-### Langkah 3-10: Inisialisasi Git dan Push Proyek Awal
+![alt text](img/praktikum2/P5_praktikum2_3.jpg)
+![alt text](img/praktikum2/P5_praktikum2_4.jpg)
+![alt text](img/praktikum2/P5_praktikum2_5.jpg)
 
-Melakukan inisialisasi Git pada proyek `hello_world` melalui terminal VS Code. Kemudian, melakukan *commit* dan *push* untuk file `.gitignore`, `README.md`, dan seluruh file proyek lainnya ke *repository* GitHub.
 
-### Langkah 11: Menjalankan Aplikasi Pertama
+#### Android Studio
 
-Menjalankan proyek `hello_world` pada emulator atau perangkat. Aplikasi *counter* bawaan Flutter akan tampil sebagai hasilnya.
+1. Di Android Studio, klik Tools > SDK Manager. Dialog Preferences > Appearance & Behavior > System Settings > Android SDK akan terbuka.
 
-### Langkah 12: Modifikasi dan Personalisasi README
+2. Klik tab SDK Tools.
 
-Mengubah teks pada aplikasi menjadi nama lengkap, mengambil *screenshot*, dan menampilkannya pada file `README.md` di *repository* GitHub.
+3. Pilih Google USB Driver, lalu klik OK.
 
------
 
-## Praktikum 4: Menerapkan Widget Dasar
+![alt text](img/praktikum2/P5_praktikum2_6.png)
+![alt text](img/praktikum2/P5_praktikum2_7.png)
 
-### Langkah 1: Text Widget
+---
 
-Membuat file `text_widget.dart` di dalam folder `lib/basic_widgets` dan mengimplementasikannya di `main.dart` untuk menampilkan teks yang sudah di-styling.
+#### Menjalankan aplikasi di perangkat Android menggunakan kabel
 
-### Langkah 2: Image Widget
+1. Sambungkan perangkat Android ke komputer menggunakan kabel USB. Dialog yang meminta Anda mengizinkan proses debug USB akan muncul di perangkat.
 
-Menambahkan gambar `logo_polinema.jpg` ke dalam folder `assets`, mendaftarkannya di `pubspec.yaml`, dan membuat `image_widget.dart` untuk menampilkannya di aplikasi.
+![alt text](img/praktikum2/P5_praktikum2_3_1.jpg)
 
------
+2. Pilih kotak centang Always allow from this computer, lalu ketuk OK.
 
-## Praktikum 5: Menerapkan Widget Material Design & Cupertino
+3. Di Android Studio di komputer, pastikan perangkat Anda dipilih di menu dropdown. Klik Ini adalah ikon Run Android Studio.
 
-### Langkah 1: Cupertino Widgets
+### Praktikum 3: Membuat Repository GitHub dan Laporan Praktikum
 
-Membuat file `loading_cupertino.dart` untuk menampilkan `CupertinoButton` dan `CupertinoActivityIndicator`.
+**Langkah 1**
+Login GitHub, buat repository baru bernama **flutter-fundamental-part1**.
 
-### Langkah 2: Floating Action Button (FAB)
+![alt text](img/praktikum3/praktikum3_1.png)
 
-Membuat file `fab_widget.dart` untuk mengimplementasikan `FloatingActionButton` sebagai bagian dari Material Design.
+**Langkah 2**
+Repository berhasil dibuat.
 
-### Langkah 3: Scaffold Widget
+![alt text](img/praktikum3/praktikum3_2.png)
 
-Menggunakan `Scaffold` di `main.dart` untuk membangun struktur dasar halaman sesuai standar Material Design, yang mencakup `AppBar`, `body`, dan `bottomNavigationBar`.
+**Langkah 3**
+Di VS Code, buka terminal lalu inisialisasi git.
 
-### Langkah 4: Dialog Widget
+![alt text](img/praktikum3/praktikum3_3.png)
 
-Mengubah `main.dart` untuk menampilkan `AlertDialog` atau `SimpleDialog` saat sebuah aksi dipicu.
+**Langkah 4**
+Pilih menu Source Control, lalu stage file `.gitignore`.
 
-### Langkah 5: Input Widget (TextField)
+![alt text](img/praktikum3/praktikum3_4.png)
 
-Mengimplementasikan `TextField` untuk menerima input teks dari pengguna.
+**Langkah 5**
+Commit dengan pesan *"tambah gitignore"*.
 
-### Langkah 6: Date and Time Pickers
+![alt text](img/praktikum3/praktikum3_5.png)
 
-Menambahkan fungsionalitas untuk menampilkan pemilih tanggal (*Date Picker*) dan waktu (*Time Picker*) sebagai bagian dari input pengguna.
+**Langkah 6**
+Push project ke GitHub.
+
+![alt text](img/praktikum3/praktikum3_6.png)
+
+**Langkah 7**
+Tambahkan remote repository.
+
+![alt text](img/praktikum3/praktikum3_7.png)
+
+**Langkah 8**
+Masukkan URL repository dan beri nama remote `origin`.
+
+![alt text](img/praktikum3/praktikum3_8_1.png)
+![alt text](img/praktikum3/praktikum3_8_2.png)
+
+**Langkah 9**
+Push file `README.md`, gunakan token GitHub untuk login.
+
+![alt text](img/praktikum3/praktikum3_9_1.png)
+![alt text](img/praktikum3/praktikum3_9_2.png)
+![alt text](img/praktikum3/praktikum3_9_3.png)
+![alt text](img/praktikum3/praktikum3_9_4.png)
+
+**Langkah 10**
+Stage All Changes, commit dengan pesan *"project hello\_world"*, lalu push.
+
+![alt text](img/praktikum3/praktikum3_10.png)
+
+**Langkah 11**
+Jalankan project di emulator atau Chrome.
+
+![alt text](img/praktikum3/praktikum3_11.png)
+![alt text](img/praktikum3/praktikum3_11_1.png)
+
+**Langkah 12**
+Screenshot hasil dengan teks nama lengkap Anda. Simpan sebagai `01.png` di folder `images`. Tambahkan ke `README.md` lalu push.
+
+![alt text](/image/01.png)
+
+---
+
+### Praktikum 4: Menerapkan Widget Dasar
+
+**Langkah 1: Text Widget**
+Buat folder `basic_widgets` di dalam `lib`, lalu file `text_widget.dart`. Import ke `main.dart`.
+
+![alt text](img/praktikum4/praktikum4_1_1.png)
+![alt text](img/praktikum4/praktikum4_1_2.png)
+
+**Langkah 2: Image Widget**
+Buat file `image_widget.dart` dan tambahkan asset pada `pubspec.yaml`.
+
+![alt text](img/praktikum4/praktikum4_2_1.png)
+![alt text](img/praktikum4/praktikum4_2_2.png)
+
+---
+
+### Praktikum 5: Menerapkan Widget Material Design dan iOS Cupertino
+
+**Langkah 1: Cupertino Button dan Loading Bar**
+Buat file `loading_cupertino.dart`.
+
+![alt text](img/praktikum5/praktikum5_1.png)
+
+**Langkah 2: Floating Action Button (FAB)**
+Buat file `fab_widget.dart`.
+
+![alt text](img/praktikum5/praktikum5_2.png)
+
+**Langkah 3: Scaffold Widget**
+Gunakan `Scaffold` untuk tata letak Material Design.
+
+![alt text](img/praktikum5/praktikum5_3.png)
+
+**Langkah 4: Dialog Widget**
+Gunakan `AlertDialog` atau `SimpleDialog`.
+
+![alt text](img/praktikum5/praktikum5_4.png)
+
+**Langkah 5: Input dan Selection Widget**
+Contoh penggunaan `TextField`.
+
+![alt text](img/praktikum5/praktikum5_5.png)
+
+**Langkah 6: Date and Time Pickers**
+Gunakan widget pemilih tanggal dan waktu.
+
+![alt text](img/praktikum5/praktikum5_6_1.png)
+![alt text](img/praktikum5/praktikum5_6_2.png)
+![alt text](img/praktikum5/praktikum5_6_3.png)
+
+---
+
